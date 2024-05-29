@@ -1,0 +1,60 @@
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+       <a href="javascript:;" class="nav-link active"
+       (click)="ontabclick('angular')"
+       [ngClass]="{
+                 active:selectedframework.toLowerCase().includes('angular')
+       }"
+       >
+        angular </a>
+    </li>
+    <li class="nav item">
+        <a HREF="javacript:;"class="nav-link" 
+        [class active]="selectedframework.toLowercase().includes('node js')"
+
+        >node js</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript;;" class="nav-link"
+            [class active]="selectedframework.toLowercase().includes('bootstrap')"
+     >bootstrap</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" class="nav-link"
+            [class active]="selectedframework.toLowercase().includes('rxjs')"
+        >rxjs</a>
+    </li>
+    </ul>
+    <div class="tab-body">
+        <div class="card">
+            <div class="card-body" *ngif="selectedframework=== tolowercase().includes('angular')">
+                <strong>angular</strong>
+                 Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body" *ngif="selectedframework===tolowercase().includes('node js')" >
+                <strong>node js</strong>
+                Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.
+           </div>
+       </div>
+       <div class="tab-body">
+        <div class="card">
+            <div class="card-body" *ngif="selectedframework===tolowercase().includes('bootstrap')">
+                <strong>bootstrap</strong>
+                 Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.
+            </div>
+        </div>
+        <div class="tab-body">
+            <div class="card">
+                <div class="card-body" *ngif="selectedframework===tolowercase().includes('rxjs')">
+                    <strong>rxjs</strong>
+                     Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.
+                </div>
+            </div>
+    
+
+            </div>
+        </div>
+    
